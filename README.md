@@ -11,7 +11,7 @@ You're going to be building out a Gif search using the Giphy API. The URL for th
 ### Your Components
 
 #### `<App/>`
-  Your top level component will be the `<App />` component-- no surprises there! It will be responsible for rendering the `<NavBar />` component (this compoonent is already provided for you, note the project has bootstrap loaded in) and the `<GifListContainer />` component
+  Your top level component will be the `<App />` component-- no surprises there! It will be responsible for rendering the `<NavBar />` component (this component is already provided for you, note the project has bootstrap loaded in) and the `<GifListContainer />` component
   
 #### `<GifListContainer />`
 
@@ -34,3 +34,5 @@ The `<GifSearch />` component will render a form that receives the user input fo
 
 `<GifSearch />` should receive a callback prop from it's parent.  On a submit event, it should invoke that callback prop with the value of the text input. It is this callback function, defined in  `<GifListContainer />`, that will actually query the api with the text the user has entered.
 
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-async-gif-search-lab'>React Async Gif Search Lab</a> on Learn.co and start learning to code for free.</p>
