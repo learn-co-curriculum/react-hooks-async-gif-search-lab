@@ -1,0 +1,32 @@
+{
+  "name": "gif_search",
+  "version": "1.0.0",
+  "description": "Use the Giphy API and React",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dog": "echo 'Fido'",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --history-api-fallback",
+    "bundle": "node ./node_modules/webpack/bin/webpack.js --progress --colors"
+  },
+  "keywords": [
+    "react",
+    "fun"
+  ],
+  "author": "Ian Candy",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
