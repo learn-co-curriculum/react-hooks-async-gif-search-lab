@@ -9,6 +9,10 @@
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --history-api-fallback",
     "bundle": "node ./node_modules/webpack/bin/webpack.js --progress --colors"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/learn-co-curriculum/react-async-gif-search-lab.git"
+  },
   "keywords": [
     "react",
     "fun"
@@ -22,11 +26,12 @@
   },
   "devDependencies": {
     "babel": "^6.23.0",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babelify": "^7.3.0",
-    "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
   }
 }
