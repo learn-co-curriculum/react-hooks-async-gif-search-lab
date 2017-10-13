@@ -22,8 +22,8 @@
   "dependencies": {
     "babel-preset-stage-1": "^6.24.1",
     "bootstrap": "^3.3.7",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
