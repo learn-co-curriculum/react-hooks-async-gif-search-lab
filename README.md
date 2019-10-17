@@ -2,8 +2,13 @@
 
 ## Instructions
 
-You're going to be building out a Gif search using the Giphy API. The URL for
-the API is
+You're going to be building out a Gif search using the Giphy API. In this lab, 
+there are no tests to pass. Rather, your task it create a working app in
+your browser using the instructions below. When finished, you should have an
+application that can take in a user's input, fetch JSON data from the Giphy API,
+and display the results.
+
+The URL for the API is
 
 `http://api.giphy.com/v1/gifs/search?q=YOUR QUERY HERE&api_key=dc6zaTOxFJmzC&rating=g`
 
@@ -90,5 +95,7 @@ accordingly. The React component is always in charge of what the DOM looks like.
 event, it should invoke that callback prop with the value of the text input. It
 is this callback function, defined in `<GifListContainer />`, that will actually
 query the API with the text the user has entered.
+
+When finished, submit your work using `learn submit`.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-async-gif-search-lab'>React Async Gif Search Lab</a> on Learn.co and start learning to code for free.</p>
