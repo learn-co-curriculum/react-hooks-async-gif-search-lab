@@ -69,6 +69,14 @@ is already provided for you, note the project has bootstrap loaded in) and the
 - [Container Components](https://medium.com/@learnreact/container-components-c0e67432e005) Learn React with chantastic
 - [Presentational vs Container Componets](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) Dan Abramov
 
+> **Note**: You may notice that Dan Abramov, one of the original proponents of 
+> using Container components, has added a more recent note recommending against them.
+> It is true that there are newer approaches to writing React apps that reduce the
+> need for having components specialize. However, while we're practicing the basics
+> of React, becoming familiar with how components form a tree and pass data from
+> parent to child is highly valuable. For this reason, we'll keep our components
+> separated here.
+
 In our app the `<GifListContainer />` will be responsible for fetching the data
 from the giphy API, storing the first 3 gifs from the response in its component
 **state**, and passing that data down to its child, the `<GifList>` component, as
