@@ -68,7 +68,7 @@ is already provided for you, note the project has bootstrap loaded in) and the
 
 > If you haven't learned about container vs presentation components yet, don't worry. We'll dig deeper into them soon enough. For now, just know that container components _container_ other components. They themselves usually aren't visibly on the page. Presentational components, on the other hand, are components can you _can_ visibly see on the page (like our `Navbar`).
 
-In our app the `<GifListContainer />` will be responsible for fetching the data
+In our app, the `<GifListContainer />` will be responsible for fetching the data
 from the giphy API, storing the first 3 gifs from the response in its component
 **state**, and passing that data down to its child, the `<GifList>` component, as
 a prop.
