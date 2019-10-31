@@ -64,7 +64,7 @@ is already provided for you, note the project has bootstrap loaded in) and the
 
 #### `<GifListContainer />`
 
-> A container does data fetching and then renders its corresponding sub-component. That’s it.
+`<GifListContainer />` should be a container that does data fetching and then renders its corresponding sub-component. That’s it.
 
 > If you haven't learned about container vs presentation components yet, don't worry. We'll dig deeper into them soon enough. For now, just know that container components _container_ other components. They themselves usually aren't visibly on the page. Presentational components, on the other hand, are components can you _can_ visibly see on the page (like our `Navbar`).
 
