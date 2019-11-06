@@ -6,7 +6,7 @@ You're going to be building out a Gif search using the Giphy API. In this lab,
 there are no tests to pass. Rather, your task is to create a working app in
 your browser using the instructions below. When finished, you should have an
 application that can take in a user's input, fetch JSON data from the Giphy API,
-and display the results.
+and display the results. As there are no tests, to register completion, run `learn submit`.
 
 ![giphy search](https://raw.githubusercontent.com/learn-co-curriculum/react-async-gif-search-lab/master/async.gif)
 
