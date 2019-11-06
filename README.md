@@ -3,19 +3,32 @@
 ## Instructions
 
 You're going to be building out a Gif search using the Giphy API. In this lab, 
-there are no tests to pass. Rather, your task it create a working app in
+there are no tests to pass. Rather, your task is to create a working app in
 your browser using the instructions below. When finished, you should have an
 application that can take in a user's input, fetch JSON data from the Giphy API,
 and display the results.
+
+![giphy search](https://raw.githubusercontent.com/learn-co-curriculum/react-async-gif-search-lab/master/async.gif)
+
+## Getting Started
 
 The URL for the API is
 
 `https://api.giphy.com/v1/gifs/search?q=YOUR QUERY HERE&api_key=dc6zaTOxFJmzC&rating=g`
 
-![giphy search](https://raw.githubusercontent.com/learn-co-curriculum/react-async-gif-search-lab/master/async.gif)
+While the above API key _may_ work, we recommend creating your own API key by 
+following the [nstructions on Giphy's developer site][create_key]. Creating a key is free
+and only requires an account. Using your own key will prevent any potential rate limiting if other 
+students are also working on this lesson.
 
-On a successful fetch request, you should get back an array of objects, each
-containing information about a particular image.
+[create_key]: https://developers.giphy.com/docs/api/#quick-start-guide
+
+Once you've got your key, you should be able to access the Giphy API from a browser and receive
+a JSON response to confirm everything is working.
+
+`https://api.giphy.com/v1/gifs/search?q=dolphin&api_key=YOUR API KEY&rating=g`
+
+You should get back an array of objects, each containing information about a particular image.
 
 ```js
   "data": [
