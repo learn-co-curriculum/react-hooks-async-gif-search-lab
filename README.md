@@ -110,8 +110,6 @@ query the API with the text the user has entered.
 
 When finished, submit your work using `learn submit`.
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/react-async-gif-search-lab'>React Async Gif Search Lab</a> on Learn.co and start learning to code for free.</p>
-
 ##### Container vs. Presentational Components
 
 - [Container Components](https://medium.com/@learnreact/container-components-c0e67432e005) Learn React with chantastic
