@@ -1,5 +1,20 @@
 # Giphy Search!
 
+
+- mapping out hierarchies
+- diving in
+- refactor
+
+
+
+
+## Questions
+
+- ComponentDidUpdate
+  - AFTER the update
+  - Not as part of the update process
+
+
 ## Instructions
 
 You're going to be building out a Gif search using the Giphy API. In this lab, 
