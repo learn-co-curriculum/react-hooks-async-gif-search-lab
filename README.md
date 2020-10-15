@@ -17,7 +17,7 @@ The URL for the API is
 `https://api.giphy.com/v1/gifs/search?q=YOUR QUERY HERE&api_key=dc6zaTOxFJmzC&rating=g`
 
 While the above API key _may_ work, we recommend creating your own API key by 
-following the [nstructions on Giphy's developer site][create_key]. Creating a key is free
+following the [instructions on Giphy's developer site][create_key]. Creating a key is free
 and only requires an account. Using your own key will prevent any potential rate limiting if other 
 students are also working on this lesson.
 
@@ -62,27 +62,27 @@ You should get back an array of objects, each containing information about a par
 ```
 
 **Note:** Notice there are many URL keys on each image object. The first `url`
-key, just below `type`, `id`, and `slug` will bring you to the images page on
-[giphy.com](giphy.com). We only want the path to the actual image, which found
+key, just below `type`, `id`, and `slug`, will bring you to the images page on
+[giphy.com](https://giphy.com/). We only want the path to the actual image, which is found
 at `images.original.url`. Using other `url` keys may cause CORS issues.
 
 ### Your Components
 
 #### `<App/>`
 
-Your top level component will be the `<App />` component-- no surprises there!
+Your top level component will be the `<App />` component - no surprises there!
 It will be responsible for rendering the `<NavBar />` component (this component
 is already provided for you, note the project has bootstrap loaded in) and the
-`<GifListContainer />` component
+`<GifListContainer />` component.
 
 #### `<GifListContainer />`
 
 `<GifListContainer />` should be a container that does data fetching and then renders its corresponding sub-component. That’s it.
 
-> If you haven't learned about container vs presentation components yet, don't worry. We'll dig deeper into them soon enough. For now, just know that container components _container_ other components. They themselves usually aren't visibly on the page. Presentational components, on the other hand, are components can you _can_ visibly see on the page (like our `Navbar`).
+> If you haven't learned about container vs presentation components yet, don't worry. We'll dig deeper into them soon enough. For now, just know that container components _contain_ other components. They themselves usually aren't visible on the page. Presentational components, on the other hand, are components can you _can_ visibly see on the page (like our `Navbar`).
 
 In our app, the `<GifListContainer />` will be responsible for fetching the data
-from the giphy API, storing the first 3 gifs from the response in its component
+from the Giphy API, storing the first 3 gifs from the response in its component
 **state**, and passing that data down to its child, the `<GifList>` component, as
 a prop.
 
@@ -99,7 +99,7 @@ each gif as an `<li>`.
 #### `<GifSearch />`
 
 The `<GifSearch />` component will render a form that receives the user input
-for the giphy search. The text input should be a _controlled component_ that
+for the Giphy search. The text input should be a _controlled component_ that
 stores the value of the input in its component state and renders the DOM
 accordingly. The React component is always in charge of what the DOM looks like.
 
