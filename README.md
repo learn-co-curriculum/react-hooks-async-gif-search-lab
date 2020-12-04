@@ -2,11 +2,12 @@
 
 ## Instructions
 
-You're going to be building out a Gif search using the Giphy API. In this lab, 
-there are no tests to pass. Rather, your task is to create a working app in
-your browser using the instructions below. When finished, you should have an
+You're going to be building out a Gif search using the Giphy API. In this lab,
+there are no tests to pass. Rather, your task is to create a working app in your
+browser using the instructions below. When finished, you should have an
 application that can take in a user's input, fetch JSON data from the Giphy API,
-and display the results. As there are no tests, to register completion, run `learn submit`.
+and display the results. As there are no tests, to register completion, run
+`learn submit`.
 
 ![giphy search](https://raw.githubusercontent.com/learn-co-curriculum/react-async-gif-search-lab/master/async.gif)
 
@@ -16,10 +17,10 @@ The URL for the API is
 
 `https://api.giphy.com/v1/gifs/search?q=YOUR QUERY HERE&api_key=dc6zaTOxFJmzC&rating=g`
 
-While the above API key _may_ work, we recommend creating your own API key by 
-following the [instructions on Giphy's developer site][create_key]. Creating a key is free
-and only requires an account. Using your own key will prevent any potential rate limiting if other 
-students are also working on this lesson.
+While the above API key _may_ work, we recommend creating your own API key by
+following the [instructions on Giphy's developer site][create_key]. Creating a
+key is free and only requires an account. Using your own key will prevent any
+potential rate limiting if other students are also working on this lesson.
 
 [create_key]: https://developers.giphy.com/docs/api/#quick-start-guide
 
@@ -77,9 +78,8 @@ is already provided for you, note the project has bootstrap loaded in) and the
 
 #### `<GifListContainer />`
 
-`<GifListContainer />` should be a container that does data fetching and then renders its corresponding sub-component. That’s it.
-
-> If you haven't learned about container vs presentation components yet, don't worry. We'll dig deeper into them soon enough. For now, just know that container components _contain_ other components. They themselves usually aren't visible on the page. Presentational components, on the other hand, are components can you _can_ visibly see on the page (like our `Navbar`).
+`<GifListContainer />` should be a component that does data fetching and then
+renders its corresponding sub-component. That’s it.
 
 In our app, the `<GifListContainer />` will be responsible for fetching the data
 from the Giphy API, storing the first 3 gifs from the response in its component
@@ -110,15 +110,3 @@ query the API with the text the user has entered.
 
 When finished, submit your work using `learn submit`.
 
-##### Container vs. Presentational Components
-
-- [Container Components](https://medium.com/@learnreact/container-components-c0e67432e005) Learn React with chantastic
-- [Presentational vs Container Componets](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) Dan Abramov
-
-> **Note**: You may notice that Dan Abramov, one of the original proponents of 
-> using Container components, has added a more recent note recommending against them.
-> It is true that there are newer approaches to writing React apps that reduce the
-> need for having components specialize. However, while we're practicing the basics
-> of React, becoming familiar with how components form a tree and pass data from
-> parent to child is highly valuable. For this reason, we'll keep our components
-> separated here.
