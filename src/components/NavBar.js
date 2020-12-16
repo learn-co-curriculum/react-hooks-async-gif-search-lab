@@ -1,22 +1,20 @@
-import React from 'react'
+import React from "react";
 
-function NavBar({ color, title }){
+function NavBar({ color, title }) {
   const colors = {
-    black: 'navbar-inverse',
-    white: 'navbar-default'
-  }
-  
+    black: "navbar-inverse",
+    white: "navbar-default",
+  };
+
   return (
     <nav className={`navbar ${colors[color]}`}>
-      <div className='container-fluid'>
-        <div className='navbar-header'>
-          <span className='navbar-brand'>
-            {title}
-          </span>
+      <div className="container-fluid">
+        <div className="navbar-header">
+          <span className="navbar-brand">{title}</span>
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
