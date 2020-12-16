@@ -1,16 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function GifSearch({ fetchGIFs }) {
-
-  const [query, setQuery] = useState("")
+  const [query, setQuery] = useState("");
 
   function handleSubmit(event) {
-    event.preventDefault()
-    fetchGIFs(query)
+    event.preventDefault();
+    fetchGIFs(query);
   }
 
   function handleChange(event) {
-    setQuery(event.target.value)
+    setQuery(event.target.value);
   }
 
   return (
@@ -19,8 +18,7 @@ function GifSearch({ fetchGIFs }) {
         <input type="text" value={query} onChange={handleChange} />
       </form>
     </div>
-  )
-
+  );
 }
 
-export default GifSearch
+export default GifSearch;

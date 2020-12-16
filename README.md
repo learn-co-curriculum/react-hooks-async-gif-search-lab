@@ -1,4 +1,4 @@
-# Giphy Search!
+# Async Giphy Search Lab
 
 ## Instructions
 
@@ -6,8 +6,7 @@ You're going to be building out a Gif search using the Giphy API. In this lab,
 there are no tests to pass. Rather, your task is to create a working app in your
 browser using the instructions below. When finished, you should have an
 application that can take in a user's input, fetch JSON data from the Giphy API,
-and display the results. As there are no tests, to register completion, run
-`learn submit`.
+and display the results.
 
 ![giphy search](https://raw.githubusercontent.com/learn-co-curriculum/react-async-gif-search-lab/master/async.gif)
 
@@ -24,12 +23,13 @@ potential rate limiting if other students are also working on this lesson.
 
 [create_key]: https://developers.giphy.com/docs/api/#quick-start-guide
 
-Once you've got your key, you should be able to access the Giphy API from a browser and receive
-a JSON response to confirm everything is working.
+Once you've got your key, you should be able to access the Giphy API from a
+browser and receive a JSON response to confirm everything is working.
 
 `https://api.giphy.com/v1/gifs/search?q=dolphin&api_key=YOUR API KEY&rating=g`
 
-You should get back an array of objects, each containing information about a particular image.
+You should get back an array of objects, each containing information about a
+particular image.
 
 ```js
   "data": [
@@ -64,49 +64,46 @@ You should get back an array of objects, each containing information about a par
 
 **Note:** Notice there are many URL keys on each image object. The first `url`
 key, just below `type`, `id`, and `slug`, will bring you to the images page on
-[giphy.com](https://giphy.com/). We only want the path to the actual image, which is found
-at `images.original.url`. Using other `url` keys may cause CORS issues.
+[giphy.com](https://giphy.com/). We only want the path to the actual image,
+which is found at `images.original.url`. Using other `url` keys may cause CORS
+issues.
 
 ### Your Components
 
-#### `<App/>`
+#### App`
 
-Your top level component will be the `<App />` component - no surprises there!
-It will be responsible for rendering the `<NavBar />` component (this component
+Your top level component will be the `App` component - no surprises there!
+It will be responsible for rendering the `NavBar` component (this component
 is already provided for you, note the project has bootstrap loaded in) and the
-`<GifListContainer />` component.
+`GifListContainer` component.
 
-#### `<GifListContainer />`
+#### GifListContainer
 
-`<GifListContainer />` should be a component that does data fetching and then
+`GifListContainer` should be a component that does data fetching and then
 renders its corresponding sub-component. That’s it.
 
-In our app, the `<GifListContainer />` will be responsible for fetching the data
+In our app, the `GifListContainer` will be responsible for fetching the data
 from the Giphy API, storing the first 3 gifs from the response in its component
-**state**, and passing that data down to its child, the `<GifList>` component, as
-a prop.
-
-It will also render a `<GifSearch />` component that renders the form.
-`<GifListContainer />` should pass down a submit handler function to `<GifSearch />`
+**state**, and passing that data down to its child, the `GifList` component,
 as a prop.
 
-#### `<GifList />`
+It will also render a `GifSearch` component that renders the form.
+`GifListContainer` should pass down a submit handler function to
+`GifSearch` as a prop.
 
-`<GifList />` is a _presentational_ component. It receives data from its props
-and renders html given the input data. It can render a top level `<ul>` with
-each gif as an `<li>`.
+#### `GifList`
 
-#### `<GifSearch />`
+`GifList` receives data from its props and renders html given the input
+data. It can render a top level `<ul>` with each gif as an `<li>`.
 
-The `<GifSearch />` component will render a form that receives the user input
+#### `GifSearch`
+
+The `GifSearch` component will render a form that receives the user input
 for the Giphy search. The text input should be a _controlled component_ that
 stores the value of the input in its component state and renders the DOM
 accordingly. The React component is always in charge of what the DOM looks like.
 
-`<GifSearch />` should receive a callback prop from its parent. On a submit
+`GifSearch` should receive a callback prop from its parent. On a submit
 event, it should invoke that callback prop with the value of the text input. It
-is this callback function, defined in `<GifListContainer />`, that will actually
+is this callback function, defined in `GifListContainer`, that will actually
 query the API with the text the user has entered.
-
-When finished, submit your work using `learn submit`.
-

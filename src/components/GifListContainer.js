@@ -1,29 +1,31 @@
-import React, { useEffect, useState } from 'react'
-import GifList from './GifList'
-import GifSearch from './GifSearch'
+import React, { useEffect, useState } from "react";
+import GifList from "./GifList";
+import GifSearch from "./GifSearch";
 
 function GifListContainer() {
-  const [gifs, setGifs] = useState([])
+  const [gifs, setGifs] = useState([]);
 
   useEffect(() => {
-    fetchGIFs()
-  }, [])
+    fetchGIFs();
+  }, []);
 
   function fetchGIFs(query = "dolphins") {
-    fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&rating=g&limit=3`)
-      .then(r => r.json())
+    fetch(
+      `https://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&rating=g&limit=3`
+    )
+      .then((r) => r.json())
       .then(({ data }) => {
-        const gifs = data.map(gif => ({ url: gif.images.original.url }))
-        setGifs(gifs)
-      })
+        const gifs = data.map((gif) => ({ url: gif.images.original.url }));
+        setGifs(gifs);
+      });
   }
 
-  return(
+  return (
     <div>
       <GifSearch fetchGIFs={fetchGIFs} />
       <GifList gifs={gifs} />
     </div>
-  )
+  );
 }
 
-export default GifListContainer
+export default GifListContainer;
