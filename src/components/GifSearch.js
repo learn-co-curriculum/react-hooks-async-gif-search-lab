@@ -15,7 +15,19 @@ function GifSearch({ fetchGIFs }) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={query} onChange={handleChange} />
+        <div className="form-group">
+          <label htmlFor="search">Enter a Search Term:</label>
+          <input
+            id="search"
+            className="form-control"
+            type="text"
+            value={query}
+            onChange={handleChange}
+          />
+        </div>
+        <button type="submit" className="btn btn-success">
+          Find Gifs
+        </button>
       </form>
     </div>
   );

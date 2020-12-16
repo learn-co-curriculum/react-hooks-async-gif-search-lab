@@ -21,9 +21,9 @@ function GifListContainer() {
   }
 
   return (
-    <div>
-      <GifSearch fetchGIFs={fetchGIFs} />
+    <div style={{ display: "flex" }}>
       <GifList gifs={gifs} />
+      <GifSearch fetchGIFs={fetchGIFs} />
     </div>
   );
 }
