@@ -68,16 +68,16 @@ key, just below `type`, `id`, and `slug`, will bring you to the images page on
 which is found at `images.original.url`. Using other `url` keys may cause CORS
 issues.
 
-### Your Components
+## Your Components
 
-#### App`
+### App
 
 Your top level component will be the `App` component - no surprises there!
 It will be responsible for rendering the `NavBar` component (this component
 is already provided for you, note the project has bootstrap loaded in) and the
 `GifListContainer` component.
 
-#### GifListContainer
+### GifListContainer
 
 `GifListContainer` should be a component that does data fetching and then
 renders its corresponding sub-component. That’s it.
@@ -91,12 +91,12 @@ It will also render a `GifSearch` component that renders the form.
 `GifListContainer` should pass down a submit handler function to
 `GifSearch` as a prop.
 
-#### `GifList`
+### GifList
 
 `GifList` receives data from its props and renders html given the input
 data. It can render a top level `<ul>` with each gif as an `<li>`.
 
-#### `GifSearch`
+### GifSearch
 
 The `GifSearch` component will render a form that receives the user input
 for the Giphy search. The text input should be a _controlled component_ that
