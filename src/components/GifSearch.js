@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-function GifSearch({ fetchGIFs }) {
+function GifSearch({ onSubmitQuery }) {
   const [query, setQuery] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    fetchGIFs(query);
+    onSubmitQuery(query);
   }
 
   function handleChange(event) {

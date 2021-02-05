@@ -4,12 +4,9 @@ import GifSearch from "./GifSearch";
 
 function GifListContainer() {
   const [gifs, setGifs] = useState([]);
+  const [query, setQuery] = useState("dolphins");
 
   useEffect(() => {
-    fetchGIFs();
-  }, []);
-
-  function fetchGIFs(query = "dolphins") {
     fetch(
       `https://api.giphy.com/v1/gifs/search?q=${query}&api_key=dc6zaTOxFJmzC&rating=g&limit=3`
     )
@@ -18,12 +15,12 @@ function GifListContainer() {
         const gifs = data.map((gif) => ({ url: gif.images.original.url }));
         setGifs(gifs);
       });
-  }
+  }, [query]);
 
   return (
     <div style={{ display: "flex" }}>
       <GifList gifs={gifs} />
-      <GifSearch fetchGIFs={fetchGIFs} />
+      <GifSearch onSubmitQuery={setQuery} />
     </div>
   );
 }
