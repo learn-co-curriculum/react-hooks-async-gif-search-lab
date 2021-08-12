@@ -8,7 +8,7 @@ browser using the instructions below. When finished, you should have an
 application that can take in a user's input, fetch JSON data from the Giphy API,
 and display the results.
 
-![giphy search](https://raw.githubusercontent.com/learn-co-curriculum/react-async-gif-search-lab/master/async.gif)
+![giphy search](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-async-gif-search-lab/async.gif)
 
 ## Getting Started
 
