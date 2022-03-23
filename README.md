@@ -1,4 +1,4 @@
-# [Optional] Async Giphy Search Lab
+# Async Giphy Search Lab
 
 ## Instructions
 
