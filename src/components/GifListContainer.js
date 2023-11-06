@@ -19,6 +19,7 @@ export default function GifListContainer() {
   }, [searchTerm]);
 
   const handleSubmit = (searchValue) => {
+    
     setSearchTerm(searchValue);
   };
 
